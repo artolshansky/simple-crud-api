@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
+// tslint:disable-next-line:no-any
 declare const module: any;
 
 async function bootstrap() {

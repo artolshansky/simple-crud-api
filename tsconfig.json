@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "declaration": true,
+    "declaration": false,
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
@@ -9,6 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es6",
+    "lib": ["es2015", "es2017"],
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./src"

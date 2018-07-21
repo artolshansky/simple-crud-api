@@ -1,0 +1,8 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "database": "simple-crud-api",
+  "entities": ["src/**/**.entity{.ts,.js}"],
+  "useNewUrlParser": true,
+  "synchronize": true
+}
