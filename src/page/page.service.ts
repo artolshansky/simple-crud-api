@@ -19,8 +19,9 @@ export class PageService {
 
   async create(body: Page): Promise<Page> {
     const date = new Date();
-    // TODO: add to path's end -${unique-counter}
-    const path = `${body.title.replace(' ', '-')}-${date.getMonth() + 1}-${date.getDate()}`;
+    const [ pages, count ] = await this.pageRepository.findAndCount({title: body.title});
+    const path = `${body.title.replace(' ', '-')}-${date.getMonth() + 1}` +
+    `-${date.getDate()}${!count ? '' : `-${count + 1}`}`;
 
     return await this.pageRepository.save({
       ...body,

@@ -1,7 +1,6 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "simple-crud-api",
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\"",
